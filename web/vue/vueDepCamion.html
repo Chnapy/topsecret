@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+
+
+
+-->
+<html>
+	<head>
+		<title>TODO supply a title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/vue/style.css"/>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<a class='but' href="?p=localiser">Localiser camion</a>
+				<a class='but but-primary' href="?p=deplacer">Déplacer camion</a>
+				<a class='but' href="?p=consulter">Consulter distance</a>
+			</nav>
+		</header>
+
+		<div class='bloc'>
+			<form method="post" action="/">
+				<table class='table'>
+					<tr>
+						<td><label for="ip_sea">Immat camion</label></td>
+						<td><input class='field' type="text" id="ip_sea" name="ip_immat" required/></td>
+					</tr>
+					<tr>
+						<td><label for="ip_sol">Ville</label></td>
+						<td><input class='field' type="text" id="ip_sol" name="ip_ville" required/></td>
+					</tr>
+				</table>
+				<input type="hidden" name="operation" value="deplacer"/>
+				<input class='but' type="submit"/>
+			</form>
+		</div>
+	</body>
+</html>
